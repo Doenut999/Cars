@@ -1,0 +1,24 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+.body {
+    width: 80vw;
+    margin: 10vh 10vw;
+    padding: 30px;
+    background-color: #a2e8e8;
+    border-radius: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.make-model {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fd55db;
+}
