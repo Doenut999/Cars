@@ -1,0 +1,67 @@
+#left {
+    background-color: transparent;
+    color: navy;
+    border: 1px solid darkslategray;
+    cursor: pointer;
+    margin: 1em;
+    display: inline;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 1rem;
+    transition: 1s ease;
+}
+
+#left:hover {
+    background-color: #1b1b1b;
+    color: navajowhite;
+}
+
+input {
+    display: block;
+    width: 30vw;
+    padding: 4px;
+    margin: 1vw;
+}
+
+select {
+    margin: 0 15px 0 17px;
+    display: block;
+
+}
+
+
+.home {
+    width: 60vw;
+    background-color: cadetblue;
+    display: flex;
+    margin: 10vh 20vw 0 20vw;
+    flex-flow: column wrap;
+    padding: 40px;
+}
+
+.right {
+    background-color: transparent;
+    color: navy;
+    border: 1px solid darkslategray;
+    cursor: pointer;
+    margin: 1em;
+    border-radius: 2px;
+    width: 15vw;
+    padding: 5px;
+    font-size: 1rem;
+    transition: 1s ease;
+}
+
+.right:hover {
+    background-color: #1b1b1b;
+    color: navajowhite;
+}
+
+.begin {
+    width: 60vw;
+    background-color: cadetblue;
+    display: flex;
+    margin: 10vh 20vw 0 20vw;
+    flex-flow: column wrap;
+    padding: 40px;
+}

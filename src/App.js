@@ -1,4 +1,6 @@
-import Car from "./Components/Car";
+import CarForm from "./Components/CarForm";
+import CarList from "./Components/CarList";
+import {useState} from "react";
 
 const App = () => {
     const inventory = [
@@ -46,17 +48,17 @@ const App = () => {
         }
     ]
 
+    const [cars, setCars] = useState(inventory)
+
+    const addCarHandler = (car) => {
+        setCars(prevState =>  [car, ...prevState])
+    }
+
 
   return (
     <div className="App">
-        <Car color={inventory[0].color} make={inventory[0].make} model={inventory[0].model} price={inventory[0].price} />
-        <Car color={inventory[1].color} make={inventory[1].make} model={inventory[1].model} price={inventory[1].price} />
-        <Car color={inventory[2].color} make={inventory[2].make} model={inventory[2].model} price={inventory[2].price} />
-        <Car color={inventory[3].color} make={inventory[3].make} model={inventory[3].model} price={inventory[3].price} />
-        <Car color={inventory[4].color} make={inventory[0].make} model={inventory[0].model} price={inventory[0].price} />
-        <Car color={inventory[5].color} make={inventory[5].make} model={inventory[5].model} price={inventory[5].price} />
-        <Car color={inventory[6].color} make={inventory[6].make} model={inventory[6].model} price={inventory[6].price} />
-        <Car color={inventory[7].color} make={inventory[7].make} model={inventory[7].model} price={inventory[7].price} />
+        <CarForm onAddCar={addCarHandler}/>
+        <CarList cars={cars} />
     </div>
   );
 }
